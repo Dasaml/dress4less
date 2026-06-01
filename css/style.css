@@ -78,7 +78,7 @@ section {
     background-position: center center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 32px);
+    min-height: 690px;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -698,13 +698,5 @@ section {
     }
     .footer-section {
         width: 30%;
-    }
-}
-
-@media (min-width: 1600px) {
-    .monitor-section,
-    .contact,
-    .hero {
-        background-size: 53%;
     }
 }
