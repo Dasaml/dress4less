@@ -78,7 +78,8 @@ section {
     background-position: center center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    min-height: 690px;
+    background-color: #000;
+    min-height: auto;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -98,18 +99,19 @@ section {
     text-align: left;
     font-size: 1.3rem;
     text-transform: uppercase;
-    line-height: 1.1;
-    margin-bottom: 50px;
+    line-height: 1.3;
+    margin-bottom: 30px;
     font-weight: 100;
 }
 .hero-content h2 {
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     text-align: left;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 1.1;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-weight: 100;
 }
 .hero-content p {
@@ -132,7 +134,7 @@ section {
     gap: 15px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 1em 0 4em;
+    margin: 4em 0;
 }
 .btn {
     padding: 10px 25px;
@@ -220,12 +222,20 @@ section {
     text-align: left;
     padding: 0 25px;
 }
+.video-mobil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: none;
+    border: none;
+}
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 300;
     line-height: 1.3;
+    text-transform: uppercase;
     padding: 35px 0 20px;
 }
 .section-text {
@@ -544,8 +554,14 @@ section {
 /* --- RESPONZIVITA --- */
 
 @media (min-width: 768px) {
+    .hero-buttons {
+        margin: 1em 0 4em;
+    }
     .logo img {
         max-width: 120px;
+    }
+    .hero {
+        min-height: 690px;
     }
     .hero-content h1 {
         font-size: 1.3rem;
@@ -577,6 +593,7 @@ section {
     }
     .hero-content h2 {
         font-size: 5rem;
+        margin-bottom: 50px;
     }
     .section-title {
         font-size: 2.5rem;
